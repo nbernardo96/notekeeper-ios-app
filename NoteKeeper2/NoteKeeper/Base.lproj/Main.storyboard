@@ -497,6 +497,11 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3WH-W1-kBd">
+                                <rect key="frame" x="363" y="69" width="41" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="square.and.arrow.up" catalog="system"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95636802911758423" green="0.91172325611114502" blue="0.82410913705825806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -513,6 +518,7 @@
                     </view>
                     <connections>
                         <outlet property="noteLabel" destination="oes-rh-0iN" id="F6T-Xn-Afx"/>
+                        <outlet property="shareButton" destination="3WH-W1-kBd" id="aNc-M4-fSw"/>
                         <outlet property="titleLabel" destination="PdX-wJ-HLm" id="9aV-EB-6jX"/>
                     </connections>
                 </viewController>
@@ -542,6 +548,7 @@
     </scenes>
     <resources>
         <image name="sign-out" width="512" height="512"/>
+        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
         <image name="studying" width="6129" height="3047"/>
     </resources>
 </document>
