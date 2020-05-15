@@ -1,4 +1,5 @@
 import UIKit
+import FirebaseDatabase
 
 class LectureViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -6,13 +7,14 @@ class LectureViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet var label: UILabel!
     
     var models: [(title: String, note: String)] = []
-
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         table.delegate = self
         table.dataSource = self
         title = "Notes"
+        
+
     }
     
     @IBAction func didTapNewNote() {

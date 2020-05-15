@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65D8D51EE08B53D0B99F10D8 /* Pods_NoteKeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1AB7B06008208F7968997D /* Pods_NoteKeeper.framework */; };
 		CF5D4F53243456CC0062F42E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5D4F52243456CC0062F42E /* AppDelegate.swift */; };
 		CF5D4F55243456CC0062F42E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5D4F54243456CC0062F42E /* SceneDelegate.swift */; };
 		CF5D4F57243456CC0062F42E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5D4F56243456CC0062F42E /* ViewController.swift */; };
@@ -16,12 +17,16 @@
 		CF69E4E4243D9B3200E9138E /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF69E4E3243D9B3200E9138E /* CardCell.swift */; };
 		CF6C43052459171700E554A1 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6C43042459171700E554A1 /* NoteViewController.swift */; };
 		CF6C43072459172700E554A1 /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF6C43062459172700E554A1 /* EntryViewController.swift */; };
+		CFC7F24A246E2871004AB20D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CFC7F249246E2871004AB20D /* GoogleService-Info.plist */; };
+		CFC7F273246F35CF004AB20D /* NoteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFC7F272246F35CF004AB20D /* NoteItem.swift */; };
 		CFD6CDC1246381AE00E259EA /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD6CDC0246381AE00E259EA /* SignupViewController.swift */; };
 		CFF89825243A8AC200B8A491 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF89824243A8AC200B8A491 /* HomeViewController.swift */; };
 		CFF89837243ADA7E00B8A491 /* LectureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF89836243ADA7E00B8A491 /* LectureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD1AB7B06008208F7968997D /* Pods_NoteKeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NoteKeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9882F092436A60CC43CE2A2 /* Pods-NoteKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteKeeper.debug.xcconfig"; path = "Target Support Files/Pods-NoteKeeper/Pods-NoteKeeper.debug.xcconfig"; sourceTree = "<group>"; };
 		CF5D4F4F243456CC0062F42E /* NoteKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF5D4F52243456CC0062F42E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF5D4F54243456CC0062F42E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,9 +38,12 @@
 		CF69E4E3243D9B3200E9138E /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		CF6C43042459171700E554A1 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		CF6C43062459172700E554A1 /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		CFC7F249246E2871004AB20D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CFC7F272246F35CF004AB20D /* NoteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteItem.swift; sourceTree = "<group>"; };
 		CFD6CDC0246381AE00E259EA /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		CFF89824243A8AC200B8A491 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CFF89836243ADA7E00B8A491 /* LectureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LectureViewController.swift; sourceTree = "<group>"; };
+		DFE9C7294B45AA93B40EA38A /* Pods-NoteKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NoteKeeper.release.xcconfig"; path = "Target Support Files/Pods-NoteKeeper/Pods-NoteKeeper.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65D8D51EE08B53D0B99F10D8 /* Pods_NoteKeeper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3E6A4DC5868702EC2783358 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9882F092436A60CC43CE2A2 /* Pods-NoteKeeper.debug.xcconfig */,
+				DFE9C7294B45AA93B40EA38A /* Pods-NoteKeeper.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CAC47FF94EFE47B0C94F7D5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD1AB7B06008208F7968997D /* Pods_NoteKeeper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CF5D4F46243456CC0062F42E = {
 			isa = PBXGroup;
 			children = (
 				CF5D4F51243456CC0062F42E /* NoteKeeper */,
 				CF5D4F50243456CC0062F42E /* Products */,
+				B3E6A4DC5868702EC2783358 /* Pods */,
+				CAC47FF94EFE47B0C94F7D5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +99,7 @@
 				CF5D4F52243456CC0062F42E /* AppDelegate.swift */,
 				CF5D4F54243456CC0062F42E /* SceneDelegate.swift */,
 				CF5D4F56243456CC0062F42E /* ViewController.swift */,
+				CFC7F272246F35CF004AB20D /* NoteItem.swift */,
 				CFF89824243A8AC200B8A491 /* HomeViewController.swift */,
 				CF69E4E3243D9B3200E9138E /* CardCell.swift */,
 				CFF89836243ADA7E00B8A491 /* LectureViewController.swift */,
@@ -78,6 +107,7 @@
 				CF5D4F5B243456CF0062F42E /* Assets.xcassets */,
 				CF5D4F5D243456CF0062F42E /* LaunchScreen.storyboard */,
 				CF5D4F60243456CF0062F42E /* Info.plist */,
+				CFC7F249246E2871004AB20D /* GoogleService-Info.plist */,
 				CF6C43042459171700E554A1 /* NoteViewController.swift */,
 				CF6C43062459172700E554A1 /* EntryViewController.swift */,
 				CFD6CDC0246381AE00E259EA /* SignupViewController.swift */,
@@ -92,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF5D4F63243456CF0062F42E /* Build configuration list for PBXNativeTarget "NoteKeeper" */;
 			buildPhases = (
+				61B01F7E77129519DDC0B6BA /* [CP] Check Pods Manifest.lock */,
 				CF5D4F4B243456CC0062F42E /* Sources */,
 				CF5D4F4C243456CC0062F42E /* Frameworks */,
 				CF5D4F4D243456CC0062F42E /* Resources */,
+				F8E5BB01BF6B6DE137F7C30E /* [CP] Embed Pods Frameworks */,
+				CFC7F24B246E2BB6004AB20D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -144,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF5D4F5F243456CF0062F42E /* LaunchScreen.storyboard in Resources */,
+				CFC7F24A246E2871004AB20D /* GoogleService-Info.plist in Resources */,
 				CF5D4F5C243456CF0062F42E /* Assets.xcassets in Resources */,
 				CF5D4F5A243456CC0062F42E /* Main.storyboard in Resources */,
 			);
@@ -151,11 +185,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		61B01F7E77129519DDC0B6BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NoteKeeper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFC7F24B246E2BB6004AB20D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\" \n";
+		};
+		F8E5BB01BF6B6DE137F7C30E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoteKeeper/Pods-NoteKeeper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NoteKeeper/Pods-NoteKeeper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NoteKeeper/Pods-NoteKeeper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CF5D4F4B243456CC0062F42E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFC7F273246F35CF004AB20D /* NoteItem.swift in Sources */,
 				CFD6CDC1246381AE00E259EA /* SignupViewController.swift in Sources */,
 				CF6C43052459171700E554A1 /* NoteViewController.swift in Sources */,
 				CFF89837243ADA7E00B8A491 /* LectureViewController.swift in Sources */,
@@ -306,6 +400,7 @@
 		};
 		CF5D4F64243456CF0062F42E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9882F092436A60CC43CE2A2 /* Pods-NoteKeeper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -315,7 +410,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nicolebernardo.NoteKeeper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolebernardo.notekeeper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -324,6 +419,7 @@
 		};
 		CF5D4F65243456CF0062F42E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFE9C7294B45AA93B40EA38A /* Pods-NoteKeeper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -333,7 +429,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.nicolebernardo.NoteKeeper;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolebernardo.notekeeper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

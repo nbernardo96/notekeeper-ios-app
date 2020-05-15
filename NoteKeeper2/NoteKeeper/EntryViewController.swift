@@ -1,7 +1,11 @@
 import UIKit
+import FirebaseDatabase
 
 class EntryViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate {
-    
+        
+    // set firebase reference
+    private let database = Database.database().reference()
+        
     @IBOutlet var titleField: UITextField!
     @IBOutlet var noteField: UITextView!
 
@@ -26,10 +30,9 @@ class EntryViewController: UIViewController, UITextViewDelegate, UITextFieldDele
         noteField.textColor = UIColor.lightGray
         noteField.returnKeyType = .done
         noteField.delegate = self
-        
             
     }
-    
+        
     // Title placeholder
     
     func textFieldDidBeginEditing(_ textView: UITextField) {
@@ -68,6 +71,11 @@ class EntryViewController: UIViewController, UITextViewDelegate, UITextFieldDele
         if let text = titleField.text, !text.isEmpty, !noteField.text.isEmpty {
             completion?(text, noteField.text)
         }
+        let object: [String: String] = [
+            "Note": noteField.text!
+        ]
+        database.child(titleField.text ?? "Note Entry").setValue(object)
+        
     }
 
 

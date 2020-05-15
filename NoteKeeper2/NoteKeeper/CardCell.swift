@@ -23,28 +23,7 @@ class CardCell: UITableViewCell {
         cardView.layer.shadowOpacity = 0.5
         cardView.layer.cornerRadius = 12
         
-//        pictureView.isUserInteractionEnabled = true
-//        
-//        let tapGesture = UITapGestureRecognizer.init(target: self, action: #selector(CardCell.imageTapped(gesture:)))
-//
-//        tapGesture.numberOfTapsRequired = 1
-//
-//        pictureView.addGestureRecognizer(tapGesture)
-        
-        
     }
-    
-//    @IBAction func imageTapped(gesture: UIGestureRecognizer) {
-//
-//        if (gesture.view as? UIImageView) != nil {
-//            print("Image Tapped")
-//            //Here you can initiate your new ViewController
-//
-//        }
-//
-//    }
-    
-    
     
 }
 
