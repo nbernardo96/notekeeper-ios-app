@@ -1,5 +1,4 @@
 import UIKit
-import FirebaseDatabase
 
 class NoteViewController: UIViewController {
 
@@ -10,7 +9,6 @@ class NoteViewController: UIViewController {
     public var noteTitle: String = ""
     public var note: String = ""
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,7 +16,7 @@ class NoteViewController: UIViewController {
         noteLabel.text = note
         
         shareButton.addTarget(self, action: #selector(self.share), for: .touchUpInside)
-
+        
     }
     
     @IBAction func share(_ sender:UIButton) {
@@ -28,5 +26,6 @@ class NoteViewController: UIViewController {
         self.present(activityController, animated: true, completion: nil)
         
     }
+    
 
 }

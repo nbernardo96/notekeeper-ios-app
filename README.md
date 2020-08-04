@@ -1,4 +1,1 @@
-# notekeeper-ios-app by Nicole Bernardo
-Language: Swift, Swift UI, Storyboards
-
-Tools: Xcode 11 and Firebase
+# notekeeper-ios-app
